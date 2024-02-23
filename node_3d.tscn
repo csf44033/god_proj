@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgd7c53urpq22"]
+
+[ext_resource type="PackedScene" uid="uid://bw17lyiu0eugx" path="res://actors/sphere.glb" id="1_4hjer"]
+[ext_resource type="Script" path="res://main.gd" id="1_v2u41"]
+[ext_resource type="PackedScene" uid="uid://cqnn06fwjaapc" path="res://levels/first/geo.glb" id="2_77ctw"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_v2u41")
+
+[node name="sphere" parent="." instance=ExtResource("1_4hjer")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="plane" parent="." instance=ExtResource("2_77ctw")]
